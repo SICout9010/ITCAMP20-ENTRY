@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Thonburi;
+    src: url("assets/fonts/SFThonburi-Regular.ttf");
+}
+
+@font-face {
+    font-family: Sukhumvit;
+    src: url("assets/fonts/SukhumvitSet-Medium.ttf");
+}n
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-image: linear-gradient(to right, #026DA3 , #008cc9, #01A6E8);
+}
+
+/* Content Styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding-right: 0px;
+}
+
+.main-header {
+    text-align: center;
+    font-family: Thonburi;
+    margin-top: 2vh;
+    color: white;
+}
+
+.main-header p {
+    font-family: Sukhumvit;
+    font-weight: bold;
+}
+
+.main-chat {
+    cursor: pointer;
+    height: auto;
+    width: 40vw;
+    font-family: Thonburi;
+    border: 1.5px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-chat div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-chat {
+        height: auto;
+        width: 90vw;
+        font-family: Thonburi;
+        border: 1.5px solid white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+p[id^="event"] {
+    visibility: hidden;
+    padding: 30px;
+    align-self: center;
+    color: gray;
+}
+
+.end-message {
+    visibility: hidden;
+    padding: 30px;
+    align-self: center;
+    color: gray;
+}
+
+.main-chat div #message {
+    padding: 10px;
+    padding-right: 50px;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    margin: 0;
+}
+
+.main-chat div #message2 {
+    padding: 10px;
+    padding-right: 50px;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    margin: 0;
+    color: #007fff;
+}
+
+.main-chat div #sender {
+    margin: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.main-chat div #sender2 {
+    align-self: end;
+    margin: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: orange;
+}
+
+.main-chat div #sender3 {
+    align-self: end;
+    margin: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #007fff;
+}
+
+div[id^="right"] {
+    position: relative;
+    padding: 20px;
+    color: orange;
+    align-self: end;
+    visibility: hidden;
+}
+
+/* #right-chat2 {
+    visibility: visible;
+} */
+
+div[id^="left"] {
+    position: relative;
+    padding: 20px;
+    color: white;
+    align-self: start;
+    visibility: hidden;
+}
+
+.send-love-container {
+    margin-top: 2vh;
+    font-family: Thonburi;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.send-love-container p {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .send-love-container {
+        width: auto;
+        font-family: Thonburi;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.heart {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes pull-chat {
+    0% {padding-top: 20px; opacity: 0;}
+    100% {padding-top: 50px; opacity: 1;}
+}
