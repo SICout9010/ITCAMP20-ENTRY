@@ -46,7 +46,7 @@
             </div>
             <div id="right-chat8">
                 <p id="sender2">Champ</p>
-                <p id="message">Oh woah, I might be abel to join. Need to ask my mom tho.</p>
+                <p id="message">Oh woah, I might be able to join. Need to ask my mom tho.</p>
             </div>
             <div id="left-chat9">
                 <p id="sender">Mr. Phuripat</p>
@@ -101,7 +101,12 @@
         <div class="send-love-container">
             <h1>Click the heart to send love to Mr. Phuripat in Discord!</h1>
             <h3>This feature using Fetch() and Discord Webhook API.</h3>
-            <img onclick="sendHeart()" src="/assets/Heart.png" alt="Heart" width="50" height="50" class="heart">
+            <div>
+                <p>Type Message here!</p>
+                <input type="text" placeholder="Man, nice work!" name="messagetosend" id="messagetosend">
+                <img onclick="sendHeart()" src="assets/heart.png" alt="Heart" width="50" height="50" class="heart">
+            </div>
+            
             <p>Heart sended!</p>
         </div>
     </div>
